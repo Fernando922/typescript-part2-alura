@@ -4,7 +4,10 @@
       "outDir": "app/js",
       "noEmitOnError": true,
       "noImplicitAny": true,
-      "removeComments": true
+      "removeComments": true,
+      "strictNullChecks": true,
+      "module": "System",
+      "experimentalDecorators": true
   },
   "include": [
       "app/ts/**/*"

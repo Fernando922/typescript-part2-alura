@@ -1,12 +1,13 @@
-class Negociacoes {
-  private _negociacoes: Negociacao[] = []
+import { Negociacao } from "./Negociacao";
+export class Negociacoes {
+  private _negociacoes: Negociacao[] = [];
 
-
-  adiciona(negociacao: Negociacao){
-    this._negociacoes.push(negociacao)
+  adiciona(negociacao: Negociacao) {
+    this._negociacoes.push(negociacao);
   }
 
-  paraArray(): Negociacao[]{  //É necessário tipar os retornos
-    return [...this._negociacoes];  //imutabilidade!!
+  paraArray(): Negociacao[] {
+    //É necessário tipar os retornos
+    return [...this._negociacoes]; //imutabilidade!!
   }
 }
